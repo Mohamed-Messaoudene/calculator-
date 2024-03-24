@@ -1,5 +1,6 @@
 const screen=document.getElementById("screen");
 const buttons=document.querySelectorAll("section #buttons_container button");
+const display=document.getElementById("display");
 buttons.forEach(btn => {
     btn.onclick=()=>{
         if(btn.innerHTML=="C"){
@@ -16,3 +17,7 @@ buttons.forEach(btn => {
         }
     }
 });
+function displayResult(){
+    let result=eval(screen.innerHTML);
+    display.innerHTML="the result is : "+result;
+}

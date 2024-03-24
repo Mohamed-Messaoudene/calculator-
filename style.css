@@ -29,6 +29,10 @@ section #affichage{
     margin-bottom: 20px;
 }
 section #affichage #screen{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 10px;
+    text-align: center;
     width: 64%;
     height: 60px;
     color: black;
