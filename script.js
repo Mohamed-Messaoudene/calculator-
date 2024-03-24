@@ -3,6 +3,7 @@ const buttons=document.querySelectorAll("section #buttons_container button");
 const display=document.getElementById("display");
 buttons.forEach(btn => {
     btn.onclick=()=>{
+        display.innerHTML="";
         if(btn.innerHTML=="C"){
             let l=screen.innerHTML.length;
             screen.innerHTML=screen.innerHTML.substring(0,l-1);
